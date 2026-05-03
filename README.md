@@ -3,29 +3,29 @@
 </p>
 
 <p align="center">
-  <strong>Connect AI agents to Atlas for market data, options analytics, workflow automation, broker execution, and real-time investing actions.</strong>
+  <strong>Connect AI agents to Atlas so they can read markets, build workflows, send alerts, and place broker orders with your approval.</strong>
 </p>
 
 <p align="center">
-  <a href="#quick-start">Quick Start</a>
+  <a href="#why-atlas-mcp">Why</a>
   ·
-  <a href="#what-problem-does-atlas-mcp-solve">Pain Points</a>
+  <a href="#what-it-can-do">What it can do</a>
   ·
-  <a href="#features">Features</a>
+  <a href="#example-prompts">Examples</a>
   ·
-  <a href="#broker-support">Brokers</a>
+  <a href="#supported-tools">Tools</a>
   ·
-  <a href="#workflow-automation">Automation</a>
+  <a href="#faq">FAQ</a>
   ·
-  <a href="#safety-first">Safety</a>
+  <a href="#safety">Safety</a>
 </p>
 
 <p align="center">
   <img alt="MCP" src="https://img.shields.io/badge/MCP-Compatible-blue" />
   <img alt="AI Agents" src="https://img.shields.io/badge/AI%20Agents-Ready-purple" />
-  <img alt="Broker Automation" src="https://img.shields.io/badge/Broker%20Automation-Supported-green" />
-  <img alt="Options Analytics" src="https://img.shields.io/badge/Options%20Analytics-Greeks%20%7C%20OI%20%7C%20Volume-orange" />
-  <img alt="Workflow Automation" src="https://img.shields.io/badge/Workflows-Discord%20%7C%20SMS%20%7C%20Telegram-black" />
+  <img alt="Broker Orders" src="https://img.shields.io/badge/Broker%20Orders-Supported-green" />
+  <img alt="Options" src="https://img.shields.io/badge/Options-Greeks%20%7C%20OI%20%7C%20Volume-orange" />
+  <img alt="Alerts" src="https://img.shields.io/badge/Alerts-Discord%20%7C%20SMS%20%7C%20Telegram-black" />
 </p>
 
 ---
@@ -34,91 +34,200 @@
 
 **Stop jumping between charts, brokers, alerts, spreadsheets, and chat apps.**
 
-Ask Agent → Analyze Market → Review Setup → Stage Orders → Automate Workflow → Notify Everywhere
+Atlas MCP lets AI agents help with investing tasks in one place:
 
-<img width="1128" height="946" alt="image" src="https://github.com/user-attachments/assets/9a98410e-1cfd-49d3-a2dd-95d5346af1fa" />
+```text
+Ask Agent → Analyze Market → Review Plan → Stage Orders → Automate Workflow → Send Alerts
+```
 
+<img width="1128" height="946" alt="Atlas MCP workflow" src="https://github.com/user-attachments/assets/9a98410e-1cfd-49d3-a2dd-95d5346af1fa" />
 
-Atlas MCP gives AI agents a direct way to analyze markets, understand options flow, create investing workflows, submit single or multi-order trades, and deliver alerts or actions to Discord, SMS, Telegram, and other chat apps.
+Atlas MCP gives agents a safe way to:
 
-It is built for agent users who want to turn market research into repeatable investing workflows.
+- Read live market data
+- Analyze stocks and options
+- Check broker accounts
+- Stage single or multiple orders
+- Send alerts to Discord, SMS, Telegram, and chat apps
+- Create repeatable investing workflows
 
-Atlas MCP can be used by:
+It works with agent tools like:
 
 - OpenClaw
 - Claude Desktop
 - Cursor
 - Cline
 - ChatGPT-compatible MCP clients
-- Custom AI agents
-- Internal trading assistants
-- Personal investment automation tools
+- Custom agents
 
 ---
 
-## The Catch
+## Why Atlas MCP?
 
-Most AI agents can reason. But they usually cannot do these thngs all at once:
+Most agents can explain the market.
 
-- Check live market data
-- Understand options chains
-- Find unusual volume or open interest
-- Review broker balances and positions
-- Submit orders to real brokerage accounts
-- Batch multiple orders at once
-- Create automated trading workflows
-- Send alerts to Discord, SMS, Telegram, or chat apps
-- Keep the user in control before execution
+But they usually cannot do the useful parts together:
+
+- Check live stock data
+- Read options chains
+- Find high-volume or high-open-interest contracts
+- Check account balances and positions
+- Prepare trades across brokers
+- Stage multiple orders at once
+- Automate alerts and workflows
+- Send updates to Discord, SMS, Telegram, or chat apps
+- Keep you in control before anything is submitted
 
 **Atlas MCP closes that gap.**
 
-It gives agents the tools they need to move from “market commentary” to “repeatable investing and trading workflows.”
-
----
-
-## What problem does Atlas MCP solve?
-
-Investors and traders lose time switching between too many tools:
+It helps agents move from:
 
 ```text
-Charts → Options Chain → Broker App → Alerts → Spreadsheet → Discord → Notes → Back to Broker
+"Here is what I think."
 ```
 
-# FAQ
+to:
 
-## Is Atlas MCP a trading bot?
-
-Atlas MCP is an agent tool layer. It gives AI agents access to market data, broker-aware workflows, order previews, and automation tools. Users remain responsible for deciding what to trade and whether to approve execution.
-
-## Can it place real orders?
-
-Yes, when broker connections and permissions are enabled. The recommended flow is preview-first, meaning the user reviews the order before it is submitted.
-
-## Can it submit multiple orders at once?
-
-Yes. Atlas MCP can support multi-order preview workflows, such as buying several stocks or preparing multiple legs from one agent request.
-
-## Can it trade options?
-
-Yes. Atlas MCP can support options chain analysis, contract lookup, Greek exposure analysis, and option order workflows where broker support is available.
-
-## Does it support Discord, SMS, and Telegram?
-
-Yes. Workflows can deliver alerts, summaries, and trade-plan notifications to Discord, SMS, Telegram, and chat apps.
-
-## Does it support Webull, Alpaca, Tradier, and Public?
-
-Atlas MCP is designed for broker-connected workflows and can support brokers such as Alpaca, Webull, Tradier, Public, and 20+ popular brokers depending on the enabled broker integration. Unfortunately no trading feature in Robinhood and Fidelity!
-
-## Is this financial advice?
-
-No. This project provides software tools for market analysis and workflow automation. It does not provide financial advice.
+```text
+"Here is the market data, here is the plan, here are the orders, review before sending."
+```
 
 ---
-## What problem does Atlas MCP solve?
 
-This project is for educational, research, and workflow automation purposes only.
+## What it can do
 
-Nothing in this repository is financial, investment, legal, tax, or trading advice. Trading stocks, options, and other financial instruments involves risk. You are responsible for your own decisions, broker connections, order approvals, automation settings, and financial outcomes.
+### Market research
 
-Always verify orders before submission.
+- Get live stock quotes
+- Pull price history
+- Check earnings dates
+- Review analyst ratings
+- Read company financials
+- Compare related stocks
+
+### Options research
+
+- Read options chains
+- Find top-volume contracts
+- Find top-open-interest contracts
+- Review Greeks
+- Analyze Gamma, Delta, Vanna, and Theta exposure
+
+### Broker actions
+
+- Connect to supported brokers
+- Check balances and positions
+- Preview stock orders
+- Preview options orders
+- Stage multiple orders at once
+- Submit approved orders
+
+Supported brokers can include:
+
+- Alpaca
+- Webull
+- Tradier
+- Public
+- 20+ popular brokers depending on your connected broker setup
+
+> Robinhood and Fidelity are not supported for trading features.
+
+### Alerts and workflows
+
+- Send trade alerts to Discord
+- Send SMS alerts
+- Send Telegram alerts
+- Create watchlist scans
+- Create price-trigger workflows
+- Automate daily or weekly market checks
+- Deliver updates to chat apps
+
+---
+
+## Example prompts
+
+```text
+Show me the top-volume SPY options contracts today.
+```
+
+```text
+Check my buying power and preview buying 5 NVDA and 5 AMD.
+```
+
+```text
+If QQQ breaks above 430, send me a Discord alert and stage a trade for review.
+```
+
+```text
+Scan my watchlist every morning and text me the best setups.
+```
+
+```text
+Preview multiple orders across my connected broker account. Do not submit until I approve.
+```
+
+---
+
+## Supported tools
+
+Atlas MCP can expose tools for:
+
+- Stocks
+- Options
+- Greeks
+- Charts
+- Broker accounts
+- Order previews
+- Order placement
+- Trading triggers
+- Workflow automation
+- Strategy notes
+- Discord alerts
+- SMS alerts
+- Telegram alerts
+
+---
+
+## FAQ
+
+### Is Atlas MCP a trading bot?
+
+No. Atlas MCP is a tool layer for AI agents. It helps agents read data, create workflows, preview orders, and send alerts. You stay in control.
+
+### Can it place real orders?
+
+Yes, when broker connections and permissions are enabled. The safest flow is preview first, then submit only after approval.
+
+### Can it submit multiple orders at once?
+
+Yes. Atlas MCP can stage multiple orders together, so you do not have to enter each trade one by one.
+
+### Can it trade options?
+
+Yes, when your broker connection supports options trading. Atlas MCP can help with options chains, contract lookup, Greeks, and order previews.
+
+### Does it support Discord, SMS, and Telegram?
+
+Yes. Workflows can send alerts, summaries, and trade updates to Discord, SMS, Telegram, and chat apps.
+
+### Does it support Webull, Alpaca, Tradier, and Public?
+
+Yes. Atlas MCP can support broker workflows through Alpaca, Webull, Tradier, Public, and 20+ popular brokers depending on your enabled broker connection.
+
+### Does it support Robinhood or Fidelity trading?
+
+No. Trading features are not available for Robinhood and Fidelity.
+
+### Is this financial advice?
+
+No. Atlas MCP is software for market research and workflow automation. It does not give financial advice.
+
+---
+
+## Safety
+
+This project is for education, research, and workflow automation only.
+
+Trading stocks, options, and other assets is risky. You are responsible for your own trades, broker connections, order approvals, automation settings, and results.
+
+Always review orders before submitting them.
