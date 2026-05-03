@@ -82,8 +82,9 @@ Investors and traders lose time switching between too many tools:
 
 ```text
 Charts → Options Chain → Broker App → Alerts → Spreadsheet → Discord → Notes → Back to Broker
+```
 
-FAQ
+# FAQ
 
 ## Is Atlas MCP a trading bot?
 
