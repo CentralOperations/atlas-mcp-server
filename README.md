@@ -58,9 +58,7 @@ Atlas MCP can be used by:
 
 ## The Catch
 
-Most AI agents can reason.
-
-But they usually cannot do these thngs all at once:
+Most AI agents can reason. But they usually cannot do these thngs all at once:
 
 - Check live market data
 - Understand options chains
@@ -80,7 +78,7 @@ It gives agents the tools they need to move from “market commentary” to “r
 
 ## What problem does Atlas MCP solve?
 
-Investors lose time switching between too many tools:
+Investors and traders lose time switching between too many tools:
 
 ```text
 Charts → Options Chain → Broker App → Alerts → Spreadsheet → Discord → Notes → Back to Broker
