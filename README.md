@@ -56,7 +56,7 @@ Atlas MCP can be used by:
 
 ---
 
-## The hook
+## The Catch
 
 Most AI agents can reason.
 
