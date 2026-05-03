@@ -60,7 +60,7 @@ Atlas MCP can be used by:
 
 Most AI agents can reason.
 
-But they usually cannot:
+But they usually cannot do these thngs all at once:
 
 - Check live market data
 - Understand options chains
@@ -74,7 +74,7 @@ But they usually cannot:
 
 **Atlas MCP closes that gap.**
 
-It gives agents the tools they need to move from “market commentary” to “actionable investing workflows.”
+It gives agents the tools they need to move from “market commentary” to “repeatable investing and trading workflows.”
 
 ---
 
