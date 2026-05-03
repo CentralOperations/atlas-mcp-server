@@ -82,3 +82,42 @@ Investors and traders lose time switching between too many tools:
 
 ```text
 Charts → Options Chain → Broker App → Alerts → Spreadsheet → Discord → Notes → Back to Broker
+
+FAQ
+
+## Is Atlas MCP a trading bot?
+
+Atlas MCP is an agent tool layer. It gives AI agents access to market data, broker-aware workflows, order previews, and automation tools. Users remain responsible for deciding what to trade and whether to approve execution.
+
+## Can it place real orders?
+
+Yes, when broker connections and permissions are enabled. The recommended flow is preview-first, meaning the user reviews the order before it is submitted.
+
+## Can it submit multiple orders at once?
+
+Yes. Atlas MCP can support multi-order preview workflows, such as buying several stocks or preparing multiple legs from one agent request.
+
+## Can it trade options?
+
+Yes. Atlas MCP can support options chain analysis, contract lookup, Greek exposure analysis, and option order workflows where broker support is available.
+
+## Does it support Discord, SMS, and Telegram?
+
+Yes. Workflows can deliver alerts, summaries, and trade-plan notifications to Discord, SMS, Telegram, and chat apps.
+
+## Does it support Webull, Alpaca, Tradier, and Public?
+
+Atlas MCP is designed for broker-connected workflows and can support brokers such as Alpaca, Webull, Tradier, Public, and 20+ popular brokers depending on the enabled broker integration. Unfortunately no trading feature in Robinhood and Fidelity!
+
+## Is this financial advice?
+
+No. This project provides software tools for market analysis and workflow automation. It does not provide financial advice.
+
+---
+## What problem does Atlas MCP solve?
+
+This project is for educational, research, and workflow automation purposes only.
+
+Nothing in this repository is financial, investment, legal, tax, or trading advice. Trading stocks, options, and other financial instruments involves risk. You are responsible for your own decisions, broker connections, order approvals, automation settings, and financial outcomes.
+
+Always verify orders before submission.
