@@ -102,7 +102,7 @@ claude mcp add --transport http atlas https://atlasmcp.finmanagerai.com/mcp \
 **Anything that follows the MCP registry:**
 
 ```
-io.github.centraloperations/atlas-mcp-server
+io.github.finmanagerai/atlas-mcp-server
 ```
 
 Then restart your client. Ask the agent to "show me an SPY quote" — if a quote comes back, you're connected.
