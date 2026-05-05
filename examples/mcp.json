@@ -1,0 +1,11 @@
+{
+  "mcpServers": {
+    "atlas": {
+      "type": "streamable-http",
+      "url": "https://atlasmcp.finmanagerai.com/mcp",
+      "headers": {
+        "Authorization": "Bearer YOUR_ATLAS_API_KEY"
+      }
+    }
+  }
+}

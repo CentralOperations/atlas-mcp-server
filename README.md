@@ -107,6 +107,30 @@ io.github.centraloperations/atlas-mcp-server
 
 Then restart your client. Ask the agent to "show me an SPY quote" — if a quote comes back, you're connected.
 
+### Per-client install recipes
+
+Each recipe covers config path, install command, env vars, test prompt, and troubleshooting:
+
+- [Claude Desktop](docs/claude-desktop.md)
+- [Claude Code](docs/claude-code.md)
+- [Cursor](docs/cursor.md)
+- [Windsurf](docs/windsurf.md)
+- [OpenAI Codex CLI](docs/codex.md)
+- [OpenClaw](docs/openclaw.md)
+- [Docker (stdio bridge)](docs/docker.md)
+
+### Letting an AI agent install it for you
+
+Drop [`SKILL.md`](SKILL.md) into your agent's skills/instructions and it will pick the right recipe, plug in the user's key, and run the smoke test on its own.
+
+### More
+
+- [Tool catalog](docs/tools.md) — every tool, with read/write classification
+- [Security & permissions](docs/security.md) — auth model, rate limits, what Atlas can and can't do
+- [Example prompts](docs/examples.md)
+- [CI smoke test](docs/ci.md) + [`examples/smoke-test.sh`](examples/smoke-test.sh)
+- [Changelog](CHANGELOG.md)
+
 > **Heads-up:** This repo intentionally contains only the public configuration needed to install and discover Atlas MCP. The server implementation, broker connectors, and proprietary data pipelines are not open-sourced.
 
 ---
