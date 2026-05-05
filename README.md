@@ -7,6 +7,8 @@
 </p>
 
 <p align="center">
+  <a href="#install">Install</a>
+  ·
   <a href="#why-atlas-mcp">Why</a>
   ·
   <a href="#what-it-can-do">What it can do</a>
@@ -59,6 +61,53 @@ It works with agent tools like:
 - Cline
 - ChatGPT-compatible MCP clients
 - Custom agents
+
+---
+
+## Install
+
+Atlas MCP is a **hosted, remote MCP server**. There's nothing to compile or self-host — your agent connects to `https://atlasmcp.finmanagerai.com/mcp` over streamable HTTP, and authenticates with your personal Atlas API key.
+
+### 1. Get your Atlas API key
+
+1. Go to **https://www.mind-vest.io/atlas** and sign in (or create an account).
+2. Open the **Dashboard** → **API Keys** section.
+3. Click **Generate key** and copy the value. Treat it like a password.
+
+### 2. Add Atlas to your MCP client
+
+**Claude Desktop / Claude Code / Cursor / Cline / any MCP client that reads `mcp.json`:**
+
+```json
+{
+  "mcpServers": {
+    "atlas": {
+      "type": "streamable-http",
+      "url": "https://atlasmcp.finmanagerai.com/mcp",
+      "headers": {
+        "Authorization": "Bearer YOUR_ATLAS_API_KEY"
+      }
+    }
+  }
+}
+```
+
+**Claude Code one-liner:**
+
+```bash
+claude mcp add --transport http atlas https://atlasmcp.finmanagerai.com/mcp \
+  --header "Authorization: Bearer YOUR_ATLAS_API_KEY"
+```
+
+**Anything that follows the MCP registry:**
+
+```
+io.github.centraloperations/atlas-mcp-server
+```
+
+Then restart your client. Ask the agent to "show me an SPY quote" — if a quote comes back, you're connected.
+
+> **Heads-up:** This repo intentionally contains only the public configuration needed to install and discover Atlas MCP. The server implementation, broker connectors, and proprietary data pipelines are not open-sourced.
 
 ---
 

@@ -1,0 +1,34 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.centraloperations/atlas-mcp-server",
+  "description": "Atlas MCP gives AI agents market superpowers: live stock and options data, Greek exposures, broker accounts, order previews, multi-leg orders, alerts (Discord/SMS/Telegram), and repeatable trading workflows. Connect once with your Atlas API key from the dashboard.",
+  "status": "active",
+  "repository": {
+    "url": "https://github.com/centraloperations/atlas-mcp-server",
+    "source": "github"
+  },
+  "websiteUrl": "https://www.mind-vest.io/atlas",
+  "version": "1.0.0",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://atlasmcp.finmanagerai.com/mcp",
+      "headers": [
+        {
+          "name": "Authorization",
+          "value": "Bearer {atlas_api_key}",
+          "description": "Atlas API key. Generate one at https://www.mind-vest.io/atlas/dashboard.",
+          "isRequired": true,
+          "isSecret": true
+        }
+      ],
+      "variables": {
+        "atlas_api_key": {
+          "description": "Your Atlas API key. Sign in at https://www.mind-vest.io/atlas, open the dashboard, and copy the key from the API Keys section.",
+          "isRequired": true,
+          "isSecret": true
+        }
+      }
+    }
+  ]
+}
